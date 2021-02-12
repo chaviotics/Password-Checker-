@@ -44,6 +44,13 @@ def main(args):
             print(f'{password} was found {count} times. You should change your password.')
         else:
             print(f"{password} was NOT found. Good password! Carry on!")
-    print("All done!")
+    return "All done!"
 
-main(sys.argv[1:])
+
+if __name__ == '__main__':
+    sys.exit(main(sys.argv[1:]))
+
+# sys.exit exits the file and returns the value of the function
+
+# Tips to make this better:
+# Maybe read these passwords instead of the command line because the command line stores the previous commands.
